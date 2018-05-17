@@ -2,7 +2,6 @@
   "name": "ssr-react-with-firebase",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
   "author": "Giovanni Lenguito <giovanni16.gl@gmail.com",
   "homepage": "https://github.com/GiovanniL19/ssr-react-with-firebase/blob/master/README.md",
   "repository": {
