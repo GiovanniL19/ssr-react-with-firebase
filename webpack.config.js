@@ -7,12 +7,12 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'server.js',
-        publicPath: '/'
+        publicPath: '/',
     },
     target: 'node',
     externals: nodeExternals(),
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
@@ -40,5 +40,5 @@ module.exports = {
                 NODE_ENV: `'production'`
             }
         })
-    ],
+    ]
 }
