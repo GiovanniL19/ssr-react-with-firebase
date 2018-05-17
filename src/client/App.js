@@ -1,23 +1,14 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { renderRoutes } from 'react-router-config'
 
-class App extends React.Component {
-
-    render() {
-        const { data, location } = this.props
-        
-        console.log(data)
-        return (
+const App = (props) => {
+    return (
         <div>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>{this.props.location}</title>
-                <link rel="canonical" href="http://example.com" />
-            </Helmet>
-            You are on at {this.props.location}
+            NAVIGATION BAR HERE
+            {renderRoutes(props.route.routes)}
+            FOOTER HERE
         </div>
-        )
-    }
+    )
 }
 
 export default App

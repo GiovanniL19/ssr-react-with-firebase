@@ -8,7 +8,16 @@ $ yarn install
 $ yarn serve
 ```
 
+# How to add paths?
+Go to ```src/client/Routes``` and add your new page. The code should look like this:
+```
+{
+    path: '/page',
+    component: Page,
+    data: data //Data comes from the routes parameter.
+}
+```
+
 # TODO:
-- Add routing boilerplate
 - Add styling boilerplate
 - Add hot reloading

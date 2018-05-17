@@ -1,4 +1,4 @@
-const Html = ({ body, helmet }) => `
+export default ({ body, helmet }) => `
 <!DOCTYPE html>
 <html ${helmet.htmlAttributes.toString()}>
     <head>
@@ -10,5 +10,3 @@ const Html = ({ body, helmet }) => `
         <div id="app">${body}</div>
     </body>
 </html>`
-
-export default Html
