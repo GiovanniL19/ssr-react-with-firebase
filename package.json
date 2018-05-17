@@ -1,0 +1,38 @@
+{
+  "name": "ssr-react-with-firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Giovanni Lenguito <giovanni16.gl@gmail.com",
+  "homepage": "https://github.com/GiovanniL19/ssr-react-with-firebase/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GiovanniL19/ssr-react-with-firebase.git"
+  },
+  "license": "Apache License 2.0",
+  "scripts": {
+    "build": "webpack",
+    "serve": "yarn build && node ./dist/server"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-react": "^7.8.2",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "firebase": "^5.0.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^2.2.4"
+  }
+}
