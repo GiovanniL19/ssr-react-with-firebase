@@ -1,6 +1,5 @@
-# SURF (Server using React and Firebase)
-Server Side Rendering React project with Firebase
-
+# Server Side Rendering for React with Firebase
+A boilerplate for Server Side Rendering React applications with Firebase functionality
 
 # Getting Started
 ```
