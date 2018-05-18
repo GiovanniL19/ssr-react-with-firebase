@@ -3,6 +3,7 @@ import App from '../App'
 // Pages
 import Home from '../pages/Home'
 import Page from '../pages/Page'
+import NotFound from '../pages/NotFound';
 
 const Routes = (data) => [
     {
@@ -17,6 +18,11 @@ const Routes = (data) => [
             {
                 path: '/page',
                 component: Page,
+                data: data
+            },
+            {
+                path: '*',
+                component: NotFound,
                 data: data
             }
         ]
