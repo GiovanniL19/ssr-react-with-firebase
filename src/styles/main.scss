@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype")
+}
+
+body {
+    background: #fbfbfb;
+    font-family: OpenSansRegular, Helvetica, sans-serif
+}
+
+.content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header, .footer {
+    text-align: center;
+}

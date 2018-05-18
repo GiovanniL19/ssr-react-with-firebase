@@ -1,8 +1,12 @@
 import React from 'react'
 import express from 'express'
+import path from 'path'
+
+//Styling
+import './styles/main.scss'
 
 //App related imports
-import App from './client/App'
+import App from './App'
 import HTML from './client/HTML'
 import { Helmet } from 'react-helmet'
 import { renderToString } from 'react-dom/server'
@@ -22,14 +26,17 @@ import { config } from '../firebase-config'
 
 //Server configuration
 const port = 8080
-const server = express()
+const app = express()
 
 //Initialise firebase
 if (!firebase.apps.length) {
     firebase.initializeApp(config)
 }
 
-server.get('*', (req, res) => {
+app.use('/assets', express.static(path.join(__dirname, 'assets')))
+app.use('/styles', express.static(path.join(__dirname, 'styles')))
+
+app.get('*', (req, res) => {
     //Get data from database
     firebase.database().ref('sites/live').once('value', (snapshot) => {
         if (snapshot.val()) {
@@ -50,6 +57,6 @@ server.get('*', (req, res) => {
     })
 })
 
-//Sets up server
-server.listen(port)
+//Sets up app
+app.listen(port)
 console.log(`Serving at http://localhost:${port}`)

@@ -5,6 +5,7 @@ export default ({ body, helmet }) => `
         ${helmet.title.toString()}
         ${helmet.meta.toString()}
         ${helmet.link.toString()}
+        <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body ${helmet.bodyAttributes.toString()}>
         <div id="app">${body}</div>

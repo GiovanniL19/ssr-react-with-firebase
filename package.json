@@ -11,7 +11,7 @@
   "license": "Apache License 2.0",
   "scripts": {
     "build": "webpack",
-    "serve": "yarn build && node ./dist/server"
+    "serve": "yarn build && node ./dist/app"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
@@ -19,12 +19,19 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.8.2",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "^3.1.4",
     "webpack-node-externals": "^1.2.0"
   },
   "dependencies": {

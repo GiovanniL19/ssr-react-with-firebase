@@ -15,7 +15,8 @@ class Home extends React.Component {
                     <meta name="description" content="Home page" />
                     <link rel="canonical" href="http://example.com" />
                 </Helmet>
-                You are on at {location.pathname}
+                Current Path: {location.pathname}
+                <img src="/assets/local-images/example.jpeg" width="100%" />
             </div>
         )
     }
