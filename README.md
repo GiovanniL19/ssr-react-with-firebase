@@ -1,4 +1,4 @@
-# SSR React with Firebase
+# SURF (Server using React and Firebase)
 Server Side Rendering React project with Firebase
 
 
@@ -17,7 +17,8 @@ Go to ```src/client/Routes``` and add your new page. The code should look like t
     data: data //Data comes from the routes parameter.
 }
 ```
+# Styling
+Styling is done with ```.scss```. You can see an example in ```styles/main.scss```
 
-# TODO:
-- Add styling boilerplate
-- Add hot reloading
+# Local Fonts
+Local fonts are stored in ```assets/fonts/```
