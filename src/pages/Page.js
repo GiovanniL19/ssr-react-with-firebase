@@ -4,10 +4,15 @@ import { Router, Route, Switch } from 'react-router'
 
 class Page extends React.Component {
 
+    clientSideCode(){
+        setTimeout(() => {
+            alert('hello world')
+        }, 2000)
+    }
+
     render() {
         const { data, location } = this.props
-        
-        console.log(this.props)
+        this.clientSideCode()
         return (
             <div>
                 <Helmet>

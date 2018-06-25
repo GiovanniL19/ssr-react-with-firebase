@@ -54,6 +54,8 @@ app.get('*', (req, res) => {
             // Return static page
             res.send(HTML({ body, helmet }) )
         }
+    }, (err) => {
+        res.status(500).send(err)
     })
 })
 
